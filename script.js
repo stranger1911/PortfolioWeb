@@ -16,6 +16,7 @@ document.querySelectorAll("a").forEach(function (element) {
 });
 
 const header = document.querySelector(".header");
+header.classList.remove("nav-open");
 document.querySelector(".mobile-nav").addEventListener("click", function () {
   header.classList.toggle("nav-open");
 });

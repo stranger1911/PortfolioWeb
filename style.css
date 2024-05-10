@@ -20,11 +20,12 @@ body {
 .header {
   position: fixed;
   z-index: 1000;
-  width: 90%;
+  width: 99%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 12rem;
+  margin-left: -1rem;
 }
 
 .header-container {
@@ -264,12 +265,13 @@ main {
 }
 
 .skills-title {
-  padding: 1px;
+  padding: 1.2px 1px;
   height: 2.2rem;
   width: 6rem;
   background-color: #1a1817;
   font-size: 1.3rem;
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
@@ -329,6 +331,7 @@ main {
   .mobile-nav {
     display: block;
     z-index: 1;
+    margin-right: -2rem;
   }
 
   .nav {
@@ -356,7 +359,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 12rem;
+    gap: 8rem;
   }
 
   .nav-ul a {
@@ -384,6 +387,34 @@ main {
 
   .profile-details {
     margin-left: 1rem;
+  }
+
+  .header-title {
+    margin-left: 0.5rem;
+  }
+
+  .contact {
+    margin-right: 0.5rem;
+  }
+
+  #home,
+  #about,
+  #skills,
+  #works,
+  #experience {
+    height: 70vh;
+  }
+
+  .skills-container {
+    margin-top: 10rem;
+  }
+
+  .profile {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
