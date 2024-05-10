@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0908;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  position: fixed;
+  z-index: 1000;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12rem;
+}
+
+.header-container {
+  width: 120rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #11100f4b;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 0 2rem;
+  border: 0.1px solid rgba(179, 171, 171, 0.151);
+}
+
+.header-title {
+  font-size: 3rem;
+  color: aliceblue;
+  margin-left: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.s {
+  color: #56c456;
+}
+
+.u {
+  color: #56c456;
+  font-size: 1.95rem;
+}
+
+.nav-ul {
+  display: flex;
+}
+
+.nav-ul a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  margin: 1.6rem;
+  color: aliceblue;
+}
+
+.contact {
+  margin-right: 2rem;
+  background-color: green;
+  border: none;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  border-radius: 2rem;
+  margin: 12rem 2rem 0 2rem;
+  background-color: black;
+  background-image: url("https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.home {
+  margin-left: 2rem;
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  border-radius: 2rem;
+  background-color: #000000b7;
+  width: 95%;
+  height: 80vh;
+}
+
+.des {
+  color: white;
+  font-size: 3.5rem;
+}
+
+.home :nth-child(3) {
+  color: white;
+  font-size: 2rem;
+  margin-top: 0.8rem;
+  margin-right: 1rem;
+}
+
+.home :nth-child(3) :nth-child(1) {
+  color: #56c456;
+  font-size: 2rem;
+}
+
+.download-btn {
+  background-color: green;
+  margin-top: 3.5rem;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.download-btn a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: aliceblue;
+}
+
+#about,
+#skills,
+#works,
+#experience {
+  width: 90%;
+  height: 80vh;
+  margin-top: 12rem;
+  display: flex;
+  align-items: center;
+  background-color: #0a0a0a;
+  border-radius: 1rem;
+}
+
+.profile {
+  margin-left: 3rem;
+}
+
+.profile-bgc {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #0189012d;
+  backdrop-filter: blur(1px);
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #02cb00;
+  border-left: 1px solid #02cb00;
+  border-bottom: 1px solid #02cb00;
+}
+
+.profile-img {
+  width: 15rem;
+  height: 15rem;
+  object-position: bottom top;
+  border-radius: 50%;
+  mix-blend-mode: exclusion;
+}
+
+.profile-share {
+  width: 18rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+  backdrop-filter: blur(10px);
+  opacity: 0.8;
+  background-color: #0189012d;
+  border-right: 1px solid #02cb00;
+  border-left: 1px solid #02cb00;
+  border-bottom: 1px solid #02cb00;
+  margin-top: -2rem;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-share p {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.profile-details {
+  margin-left: 5rem;
+}
+
+.profile-about {
+  padding: 1px;
+  height: 2.2rem;
+  width: 8rem;
+  background-color: #1a1817;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.profile-details h1 {
+  font-size: 2.5rem;
+  color: #028901;
+  margin-top: 1rem;
+}
+
+.profile-sum {
+  font-size: 1.4rem;
+  color: white;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+}
+
+.mobile-nav {
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon {
+  height: 4.8rem;
+  width: 4.8rem;
+  margin-right: 2rem;
+}
+
+.close-btn {
+  display: none;
+}
+
+.skills-container {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.skills-title {
+  padding: 1px;
+  height: 2.2rem;
+  width: 6rem;
+  background-color: #1a1817;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  color: white;
+  margin-top: 3rem;
+}
+
+.skills-desp {
+  font-size: 2.5rem;
+  color: #028901;
+  margin: 3rem 1rem 0 1rem;
+  text-align: center;
+}
+
+.skills-defination {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.skills-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skills-con img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.skills-con p {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 700;
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 550px) {
+  #about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile-details {
+    margin-top: 7rem;
+  }
+
+  .mobile-nav {
+    display: block;
+    z-index: 1;
+  }
+
+  .nav {
+    background-color: #0a0a0a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 101%;
+    height: 100vh;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+    /* 1) Hide it visibility */
+    opacity: 0;
+    /* 2) make it unaccesible to mouse and keyboard */
+    pointer-events: none;
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12rem;
+  }
+
+  .nav-ul a {
+    font-size: 3rem;
+  }
+
+  .nav-open .nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .close-btn {
+    display: block;
+  }
+
+  .nav-open .menu-btn {
+    display: none;
+  }
+
+  .skills-defination {
+    width: 70%;
+  }
+
+  .profile-details {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .skills-defination {
+    width: 100%;
+  }
+
+  .profile-details {
+    margin-left: 1rem;
+  }
+}
