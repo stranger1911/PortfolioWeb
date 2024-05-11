@@ -1,4 +1,9 @@
-document.querySelectorAll("a").forEach(function (element) {
+// const nav = document.querySelector(".nav");
+// console.log(nav);
+// const anch = document.querySelectorAll("a.anchor");
+// console.log(anch);
+
+document.querySelectorAll("a.anchor").forEach(function (element) {
   element.addEventListener("click", function (event) {
     event.preventDefault(); // Prevent default anchor behavior
 

@@ -164,16 +164,20 @@ main {
 #works,
 #experience {
   width: 90%;
-  height: 80vh;
+  max-height: 12000rem;
   margin-top: 12rem;
   display: flex;
   align-items: center;
-  background-color: #0a0a0a;
+  background-color: #131212;
+  /* background-color: red; */
   border-radius: 1rem;
 }
 
 .profile {
-  margin-left: 3rem;
+  margin: 3rem 0 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profile-bgc {
@@ -221,7 +225,7 @@ main {
 }
 
 .profile-details {
-  margin-left: 5rem;
+  margin: 3rem 3rem 3rem 3rem;
 }
 
 .profile-about {
@@ -269,11 +273,12 @@ main {
 }
 
 .skills-container {
-  height: 80vh;
+  max-height: 120rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 100%;
+  margin-bottom: 4rem;
 }
 
 .skills-title {
@@ -305,7 +310,7 @@ main {
   align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
-  width: 50%;
+  width: 70%;
 }
 
 .skills-con {
@@ -316,8 +321,8 @@ main {
 }
 
 .skills-con img {
-  height: 7rem;
-  width: 7rem;
+  height: 10rem;
+  width: 10rem;
   border-radius: 1rem;
   object-fit: cover;
 }
@@ -327,6 +332,119 @@ main {
   color: white;
   font-weight: 700;
   margin-top: 0.2rem;
+}
+
+.works-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.works-title {
+  padding: 1.2px 1px;
+  height: 2.2rem;
+  width: 6rem;
+  background-color: #1a1817;
+  font-size: 1.3rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  color: white;
+  margin-top: 3rem;
+}
+
+.works-desp {
+  font-size: 2.5rem;
+  color: #028901;
+  margin: 3rem 1rem 0 1rem;
+  text-align: center;
+}
+
+.works-cards-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 3rem 3rem;
+  flex-direction: row;
+  width: 100%;
+}
+
+.works-cards {
+  max-height: 200rem;
+  width: 25rem;
+  background-color: #0e0d0d;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #028901;
+  box-shadow: 0 5px 10px rgba(230, 225, 225, 0.05);
+}
+
+.works-cards img {
+  max-width: calc(100%-10%);
+  height: auto;
+  border-radius: 1rem 1rem 0 0;
+  /* object-fit: cover; */
+  /* aspect-ratio: 2/1.2; */
+}
+
+.works-cards h1 {
+  font-size: 2rem;
+  margin: 1rem 1rem 0.5rem 1rem;
+  color: white;
+  text-align: center;
+}
+
+.works-cards p {
+  font-size: 1rem;
+  margin: 0.5rem 1rem 0.5rem 1rem;
+  color: white;
+}
+
+.works-skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.works-skills span {
+  font-size: 1rem;
+  margin: 0.5rem 0.5rem 1rem 1rem;
+  padding: 0.2rem 0.5rem;
+  background-color: #2c2a29;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.works-links {
+  margin: 0.5rem 1rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.works-links a {
+  color: white;
+  font-size: 1rem;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 0.4rem;
+  text-align: center;
+}
+
+.links img {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
 }
 
 @media (max-width: 900px) {
@@ -396,6 +514,15 @@ main {
     width: 70%;
     margin-top: 7rem;
   }
+
+  .skills-con img {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .works-cards-container {
+    gap: 5rem;
+  }
 }
 
 @media (max-width: 550px) {
@@ -447,7 +574,7 @@ main {
   #skills,
   #works,
   #experience {
-    height: 70vh;
+    max-height: 1200rem;
   }
 
   .overlay {
@@ -465,6 +592,11 @@ main {
     align-items: center;
     flex-direction: column;
   }
+
+  .skills-con img {
+    width: 6rem;
+    height: 6rem;
+  }
 }
 
 @media (max-width: 400px) {
@@ -473,7 +605,11 @@ main {
   }
 
   .skills-con img {
-    width: 5rem;
-    height: 5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .skills-title {
+    margin-top: 2rem;
   }
 }
