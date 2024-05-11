@@ -175,7 +175,7 @@ main {
 }
 
 .profile {
-  /* margin: 3rem 0 3rem 3rem; */
+  margin: 3rem 0 3rem 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -226,7 +226,7 @@ main {
 }
 
 .profile-details {
-  margin: 3rem 3rem 3rem 3rem;
+  margin: 3rem 1rem 3rem 3rem;
 }
 
 .profile-about {
@@ -252,7 +252,7 @@ main {
   font-size: 1.4rem;
   color: white;
   margin-top: 1.5rem;
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
 }
 
 .mobile-nav {
@@ -294,7 +294,7 @@ main {
   align-items: center;
   border-radius: 0.5rem;
   color: white;
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 .skills-desp {
@@ -306,6 +306,7 @@ main {
 
 .skills-defination {
   margin: 8rem 1rem 1rem 1rem;
+  padding: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -439,16 +440,211 @@ main {
   justify-content: center;
   text-align: center;
   gap: 0.4rem;
-  text-align: center;
 }
 
 .links img {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+  margin-top: 0.28rem;
+}
+
+.experience-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  padding-bottom: 5rem;
+}
+
+.experience-title {
+  padding: 1.2px 1px;
+  height: 2.2rem;
+  width: 6rem;
+  background-color: #1a1817;
+  font-size: 1.3rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  color: white;
+  margin-top: 3rem;
+}
+
+.experience-desp {
+  font-size: 2.5rem;
+  color: #028901;
+  margin: 3rem 1rem 0 1rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.experience-section {
+  width: 80%;
+  max-height: 100rem;
+  background-color: #333131;
+  margin: 1rem;
+  display: flex;
+  border-radius: 1rem;
+  flex-direction: column;
+  border: 1px solid #018901;
+}
+
+.experience-job-des {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience-job-des p {
+  font-size: 1.2rem;
+  color: white;
+  margin: 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-icon img {
+  width: 3rem;
+  height: 3rem;
+  stroke: #028901;
+  margin: 0 1rem;
   cursor: pointer;
 }
 
+.minus {
+  display: none;
+  width: 3rem;
+  height: 3rem;
+}
+
+.minus1 {
+  display: none;
+  width: 3rem;
+  height: 3rem;
+}
+
+.experience-section-title {
+  font-size: 1.5rem;
+  color: white;
+  margin: 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-section-details {
+  border-top: 1px solid #c6d3c9;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-section-details1 {
+  border-top: 1px solid #c6d3c9;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-loc {
+  display: flex;
+  margin: 1rem;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.experience-loc img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.experience-loc p {
+  font-size: 1rem;
+  color: white;
+}
+
+.experience-section-details pre {
+  font-size: 1.5rem;
+  color: white;
+  margin: 0.5rem 1rem;
+  white-space: pre-wrap;
+}
+
+.experience-section-details1 pre {
+  font-size: 1.5rem;
+  color: white;
+  margin: 0.5rem 1rem;
+  white-space: pre-wrap;
+}
+
+.experience-skills {
+  display: flex;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.experience-skills span {
+  font-size: 1rem;
+  padding: 0.2rem 0.5rem;
+  background-color: #2c2a29;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.experience-section-details {
+  display: none;
+}
+
+.experience-section-details1 {
+  display: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12rrem;
+  width: 100%;
+  height: 5vh;
+  border-radius: 1rem;
+  background-color: #131212;
+}
+
+footer p {
+  font-size: 1.5rem;
+  color: white;
+  margin: 1rem;
+}
+
 @media (max-width: 900px) {
+  .experience-job-des p {
+    font-size: 1rem;
+  }
+
+  .experience-section-title {
+    font-size: 1rem;
+  }
+
+  .date-icon img {
+    width: 2rem;
+    height: 2rem;
+  }
+
   .mobile-nav {
     display: block;
     z-index: 1;
@@ -527,6 +723,23 @@ main {
 }
 
 @media (max-width: 550px) {
+  .experience-job-des p {
+    font-size: 0.7rem;
+  }
+
+  .experience-section-title {
+    font-size: 0.7rem;
+  }
+
+  .date-icon img {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .profile {
+    margin: 0;
+  }
+
   #about {
     flex-direction: column;
     align-items: center;
@@ -602,6 +815,14 @@ main {
 }
 
 @media (max-width: 400px) {
+  .experience-job-des p {
+    font-size: 0.5rem;
+  }
+
+  .experience-section-title {
+    font-size: 0.5rem;
+  }
+
   .profile-details {
     margin-left: 1rem;
   }

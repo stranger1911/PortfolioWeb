@@ -32,3 +32,38 @@ anchor.forEach((el) => {
     header.classList.remove("nav-open");
   });
 });
+
+// document.querySelector(".plus").addEventListener(function () {
+//   const dropDown = document.querySelector(".experience-section-details");
+//   dropDown.style.display = "block";
+// });
+
+const plusIcon = document.querySelector("img.plus");
+const dropDown = document.querySelector(".experience-section-details");
+const minusIcon = document.querySelector("img.minus");
+plusIcon.addEventListener("click", function () {
+  dropDown.style.display = "block";
+  plusIcon.style.display = "none";
+  minusIcon.style.display = "block";
+});
+
+minusIcon.addEventListener("click", function () {
+  dropDown.style.display = "none";
+  plusIcon.style.display = "block";
+  minusIcon.style.display = "none";
+});
+
+const plus1Icon = document.querySelector("img.plus1");
+const drop1Down = document.querySelector(".experience-section-details1");
+const minus1Icon = document.querySelector("img.minus1");
+plus1Icon.addEventListener("click", function () {
+  drop1Down.style.display = "block";
+  plus1Icon.style.display = "none";
+  minus1Icon.style.display = "block";
+});
+
+minus1Icon.addEventListener("click", function () {
+  drop1Down.style.display = "none";
+  plus1Icon.style.display = "block";
+  minus1Icon.style.display = "none";
+});
