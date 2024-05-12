@@ -4,7 +4,12 @@
 // console.log(anch);
 
 document.querySelectorAll("a.anchor").forEach(function (element) {
+  // console.log(element);
   element.addEventListener("click", function (event) {
+    document.querySelectorAll("a.anchor").forEach(function (ele) {
+      ele.style.color = "#fff";
+    });
+    element.style.color = "#018901";
     event.preventDefault(); // Prevent default anchor behavior
 
     var pageId = this.getAttribute("data-page");
