@@ -43,9 +43,9 @@ anchor.forEach((el) => {
 //   dropDown.style.display = "block";
 // });
 
-const plusIcon = document.querySelector("img.plus");
+const plusIcon = document.querySelector("svg.plus");
 const dropDown = document.querySelector(".experience-section-details");
-const minusIcon = document.querySelector("img.minus");
+const minusIcon = document.querySelector("svg.minus");
 plusIcon.addEventListener("click", function () {
   dropDown.style.display = "block";
   plusIcon.style.display = "none";
@@ -58,9 +58,9 @@ minusIcon.addEventListener("click", function () {
   minusIcon.style.display = "none";
 });
 
-const plus1Icon = document.querySelector("img.plus1");
+const plus1Icon = document.querySelector("svg.plus1");
 const drop1Down = document.querySelector(".experience-section-details1");
-const minus1Icon = document.querySelector("img.minus1");
+const minus1Icon = document.querySelector("svg.minus1");
 plus1Icon.addEventListener("click", function () {
   drop1Down.style.display = "block";
   plus1Icon.style.display = "none";

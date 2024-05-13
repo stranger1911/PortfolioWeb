@@ -549,16 +549,12 @@ main {
   cursor: pointer;
 }
 
-.minus {
-  display: none;
-  width: 3rem;
-  height: 3rem;
-}
-
+.minus,
 .minus1 {
   display: none;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 2rem;
+  fill: #018901;
 }
 
 .experience-section-title {
@@ -677,6 +673,7 @@ form input {
   border-radius: 1rem;
   border: none;
   font-size: 1.5rem;
+  padding-left: 1rem;
 }
 
 form button {
@@ -696,12 +693,21 @@ form textarea {
   border-radius: 1rem;
   border: none;
   font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+
+.anchor:focus {
+  color: #018901;
+}
+
+.contact:focus {
+  background-color: #053304;
 }
 
 input::placeholder,
 textarea::placeholder {
   color: black;
-  padding: 1rem;
 }
 
 input:focus,
@@ -760,6 +766,15 @@ svg.svg {
   width: 2rem;
   height: 2rem;
   fill: white;
+}
+
+.plus,
+.plus1 {
+  width: 4rem;
+  height: 4rem;
+  fill: #018901;
+  cursor: pointer;
+  /* margin-right: rem; */
 }
 
 .social-icon {
