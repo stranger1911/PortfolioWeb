@@ -555,6 +555,7 @@ main {
   width: 4rem;
   height: 2rem;
   fill: #018901;
+  cursor: pointer;
 }
 
 .experience-section-title {
